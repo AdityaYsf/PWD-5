@@ -1,0 +1,123 @@
+/* Reset CSS untuk konsistensi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body dengan layout tengah */
+body {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container utama form */
+.form-container {
+    background-color: #fff;
+    width: 450px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header form */
+h1, h3, h5 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Garis horizontal */
+hr {
+    border: none;
+    height: 2px;
+    background-color: red;
+    margin: 15px 0;
+}
+
+/* Grup form untuk setiap input */
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label form */
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+/* Input dan textarea */
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Kontainer TTL dengan elemen vertikal */
+.ttl-container {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.ttl-container input,
+.ttl-container select {
+    width: 80px;
+    padding: 8px;
+    font-size: 13px;
+}
+
+/* Radio button */
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+/* Tombol aksi (KIRIM dan BERSIH) */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+input[type="submit"], input[type="reset"] {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+}
+
+input[type="reset"] {
+    background-color: #f44336;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+input[type="reset"]:hover {
+    background-color: #e53935;
+}
+
+/* Marquee */
+marquee {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+}
